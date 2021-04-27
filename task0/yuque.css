@@ -1,0 +1,205 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0px;
+}
+.main-wrapper{
+    background-color: #fafafa;
+    width: 100%;
+    height: 100%;
+}
+.layout-container{
+    margin:0px auto;
+    width: 1024px;
+    padding: 0 16px;
+    height: 100%;
+}
+.lark-container{
+    width: 400px;
+    height: 100%;
+    padding:0px 312px ;
+}
+.lark{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: white;
+    width: 400px;
+    height: 566.5px;
+    margin-top: 96px;
+    border: 1px solid rgb(233,233,233);
+}
+.lark-main{
+    width: 382px;
+    height: 508.8px;
+    padding: 40px 20px;
+    flex-direction: column;
+}
+.logo-container{
+    text-align: center;
+}
+.character{
+    text-align: center;
+}
+.input{
+    width: 330px;
+    height: 40px;
+    align-items: center;
+    padding-left:25px;
+}
+.input-inner{
+    display: inline-flex;
+    width: 100%;
+    justify-items: center;
+}
+
+.input-number{
+    width: 88px;
+    height: 37px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px solid #d9d9d9;
+    background-color: #Fff;
+    padding: 0px 11px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+}
+.input-number>span{
+    padding-right: 8px;
+    cursor: pointer;
+}
+.downpointer{
+    color: #d9d9d9;
+    cursor: pointer;
+}
+.phonenumber{
+    height: 37px;
+    border: 1px solid #d9d9d9;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 232px;
+    padding:7px 11px;
+    outline-color:#25b864;
+}
+.password{
+    width: 330px;
+    height: 37px;
+    padding-left: 25px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.password-inner{
+    border: 1px solid #d9d9d9;
+    background-color: #Fff;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    
+    align-items: center;
+}
+i{
+    width: 16px;
+    height: 16px;
+}
+.input-password{
+    display: inline-flex;
+}
+.password-inner:hover{
+    outline-color: #25b864;
+}
+.svg-icon{
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    vertical-align: center;
+    margin-left: 3px;
+    margin-right: 4px;
+}
+#bold{
+    padding-top: 4px;
+    width: 22px;
+    height: 22px;
+}
+.loginPasswordInput{
+    width: 240px;
+    background-color: #Fff;
+    outline: none;
+    border: none;
+    height: 24px;
+    margin: 2px 0px;
+}
+.login-text{
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    line-height: 1.5;
+    color: #595959;
+    text-align: left;
+    margin-left: 25px;
+}
+.button-container{
+    text-align: center;
+    margin-top: 10px;
+    padding-left:20px ;
+}
+#clickbutton{
+    width: 305px;
+    height: 42px;
+    border-radius: 4px;
+    border: 1px solid #25b864;
+    color: white;
+    background-color: #25b864;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Chinese Qute";
+}
+.third-login{
+    margin-top: 52px;
+    margin-left: 21px;
+    text-align: center;
+    width: 320px;
+    cursor: pointer;
+    /*background-image: url(https://gw.alipayobjects.com/mdn/prod_resou/afts/img/A*wLosTZsNyYcAAAAAAAAAAABjARQnAQ);*/
+}
+.third-login-a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+.third-login-a>span{   
+    width: 24px;
+    height: 24px;
+}
+.login-foot{
+    width: 320px;
+    height: 21px;
+    margin-top: 28px;
+    text-align: center;
+    margin-left: 25px;
+}
+.login-foot>a{
+    color:#096dd9;
+    text-decoration: none;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+.login-foot-span{
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    vertical-align: middle;
+    margin: 0px 8px 3px;
+    background-color: #e8e8e8;
+}

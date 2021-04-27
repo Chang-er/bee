@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="yuque.css" type="text/css" rel="stylesheet">
+    <Script src="https://code.jquery.com/jquery-3.1.1.min.js"></Script>
+    <script src="semantic.min.js"></script>
+    <link rel="stylesheet" href="semantic.min.css"  media="all">
+    <script src="/task1/yuque.js"></script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="layout-container">
+            <div class="lark-container">
+                <div class="lark">
+                    <div class="lark-main">
+                        <div class="logo-container">
+                            <div class="loge" style="display: inline-block;">
+                                <img src="https://gw.alipayobjects.com/mdn/prod_resource/afts/img/A*FsnmRIiTfe0AAAAAAAAAAABkARQnAQ" alt="语雀" style="width: 64px;height: 64px;">
+                            </div>
+                        </div>
+                        <div class="character">
+                            <h2 style="font-size: 32px; font-weight: 500;margin-bottom: 0px;">语雀</h2>
+                        </div>
+                        <p style="text-align: center;margin-top: 8px;margin-bottom: 54px;">
+                            <span style="color: #595959; font-size: 18px;">
+                                专业的云端知识库
+                            </span>
+                        </p>
+                        <div class="input">
+                            <span class="input-inner">
+                                <div class="input-number">
+                                    <span>+86</span>
+                                    <div class="downpointer ">
+                                        <svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                            <path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <input class="phonenumber" placeholder="手机号" id="phone">
+                            </span>
+                        </div>
+                        <div class="password">
+                            <div class="password-inner" id="changecolor">
+                                    <span class="svg-icon">
+                                        <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m18.75 9h-.75v-3c0-3.309-2.691-6-6-6s-6 2.691-6 6v3h-.75c-1.24 0-2.25 1.009-2.25 2.25v10.5c0 1.241 1.01 2.25 2.25 2.25h13.5c1.24 0 2.25-1.009 2.25-2.25v-10.5c0-1.241-1.01-2.25-2.25-2.25zm-10.75-3c0-2.206 1.794-4 4-4s4 1.794 4 4v3h-8zm5 10.722v2.278c0 .552-.447 1-1 1s-1-.448-1-1v-2.278c-.595-.347-1-.985-1-1.722 0-1.103.897-2 2-2s2 .897 2 2c0 .737-.405 1.375-1 1.722z" fill="#d9d9d9"/>
+                                        </svg>
+                                    </span>
+                                    <div class="input-password">
+                                        <input type="text"  class="loginPasswordInput" placeholder="密码" id="password-active">
+                                    </div>
+                                    <span class="svg-icon"  onlick="hideShowPsw()" style="cursor: pointer; display: inline;">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                            viewBox="0 0 469.44 469.44" style="enable-background:new 0 0 469.44 469.44;" xml:space="preserve" fill="#d9d9d9">
+                                            <g>
+                                                <g>
+                                                    <g>
+                                                    <path d="M231.147,160.373l67.2,67.2l0.32-3.52c0-35.307-28.693-64-64-64L231.147,160.373z"/>
+                                                    <path d="M234.667,117.387c58.88,0,106.667,47.787,106.667,106.667c0,13.76-2.773,26.88-7.573,38.933l62.4,62.4
+                                                        c32.213-26.88,57.6-61.653,73.28-101.333c-37.013-93.653-128-160-234.773-160c-29.867,0-58.453,5.333-85.013,14.933l46.08,45.973
+                                                        C207.787,120.267,220.907,117.387,234.667,117.387z"/>
+                                                    <path d="M21.333,59.253l48.64,48.64l9.707,9.707C44.48,145.12,16.64,181.707,0,224.053c36.907,93.653,128,160,234.667,160
+                                                        c33.067,0,64.64-6.4,93.547-18.027l9.067,9.067l62.187,62.293l27.2-27.093L48.533,32.053L21.333,59.253z M139.307,177.12
+                                                        l32.96,32.96c-0.96,4.587-1.6,9.173-1.6,13.973c0,35.307,28.693,64,64,64c4.8,0,9.387-0.64,13.867-1.6l32.96,32.96
+                                                        c-14.187,7.04-29.973,11.307-46.827,11.307C175.787,330.72,128,282.933,128,224.053C128,207.2,132.267,191.413,139.307,177.12z"
+                                                        />
+                                                     </g>
+                                                </g>
+                                             </g>
+                                        </svg>
+                                    </span>
+                                    <span class="svg-icon-active" style="display: none;"  onclick="hideShowPsw()">
+                                        <svg viewBox="64 64 896 896" focusable="false" data-icon="eye" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z">
+                                            <path d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z"></path>
+                                        </svg>
+                                    </span>
+                            </div>
+                        </div>
+                        <span class="login-text">免密码登录</span>
+                        <div class="button-container">
+                            <button type="button" value="提交" id="clickbutton">登录</button>
+                        </div>
+                        <div class="third-login">
+                            <a class="third-login-a" href="https://www.yuque.com/login?platform=dingtalk">
+                                <span class="dingtalk">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 512.007 512.007" style="enable-background:new 0 0 512.007 512.007; width: 28px;height: 
+                                            28px;" xml:space="preserve">
+                                    <circle style="fill:#E6EFF4;" cx="256.003" cy="256.003" r="256.003"/>
+                                    <path style="fill:#B6D1DD;" d="M395.421,116.572C359.739,80.892,310.447,58.824,256,58.824
+                                        C147.102,58.824,58.824,147.103,58.824,256c0,54.447,22.068,103.739,57.748,139.421l0,0l115.452,115.452
+                                        C239.919,511.608,247.912,512,256,512c141.385,0,256-114.615,256-256c0-8.086-0.393-16.081-1.126-23.976L395.421,116.572z"/>
+                                    <circle style="fill:#41A0D7;" cx="256.003" cy="256.003" r="197.176"/>
+                                    <path style="fill:#FFFFFF;" d="M148.363,129.438c0.003-3.922,1.97-7.581,5.239-9.748c3.269-2.167,7.403-2.549,11.018-1.027
+                                        l187.725,79.042c4.825,2.032,8.56,6.017,10.275,10.964c1.714,4.946,1.248,10.388-1.285,14.971l-42.47,76.85h39.507l-70.281,89.827
+                                        l13.307-62.381l-24.952-1.247l7.486-38.26l-33.265,11.697c-3.039,1.069-6.383,0.873-9.277-0.542
+                                        c-8.031-3.929-24.665-13.172-36.374-27.2c-1.626-1.948-2.077-4.621-1.181-6.994c0.896-2.374,3.002-4.075,5.509-4.463l61.28-9.509
+                                        h-72.695c-3.357,0-6.567-1.405-8.843-3.872c-5.775-6.258-16.834-19.593-23.441-36.212c-1.232-3.099-0.666-6.624,1.475-9.181
+                                        c2.141-2.556,5.51-3.726,8.777-3.06l93.48,19.055l-97.976-32.398c-4.45-1.472-8.183-4.568-10.449-8.671
+                                        C156.023,168.154,148.344,150.816,148.363,129.438z"/>
+                                   </svg>
+                                </span>
+                            </a>
+                            <a class="third-login-a" href="https://auth.alipay.com/login/index.htm?goto=https%3A%2F%2Fopenauth.alipay.com%3A443%2Foauth2%2FpublicAppAuthorize.htm%3Fscope%3Dauth_user%26app_id%3D2018060560270750%26redirect_uri%3Dhttps%253A%252F%252Fwww.yuque.com%252Flogin%252Foauth%252Falipay%252Fcallback%26state%3D716bcb87-0da1-4d73-aa48-0aad8a8f2ceb">
+                                <span class="alipay">
+                                    <svg t="1618110345654" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1120" xmlns:xlink="http://www.w3.org/1999/xlink" width="" height="28"><defs><style type="text/css"></style></defs>
+                                        <path d="M230.771014 576.556522c-12.614493 9.646377-25.228986 23.744928-28.93913 42.295652-5.194203 24.486957-0.742029 55.652174 22.26087 80.13913 28.93913 28.93913 72.718841 37.101449 92.011594 38.585508 51.2 3.710145 106.110145-22.26087 147.663768-50.457971 16.324638-11.130435 43.77971-34.133333 70.492754-69.750725-59.362319-30.423188-133.565217-64.556522-212.22029-61.588406-41.553623 1.484058-70.492754 9.646377-91.269566 20.776812zM983.188406 712.347826c25.971014-61.588406 40.811594-129.113043 40.811594-200.347826 0-281.971014-230.028986-512-512-512S0 230.028986 0 512s230.028986 512 512 512c170.666667 0 321.298551-83.849275 414.794203-212.22029C838.492754 768.742029 693.797101 696.023188 604.011594 652.985507c-42.295652 48.973913-105.368116 97.205797-176.602898 117.982609-44.521739 13.356522-85.333333 18.550725-126.886957 9.646377-42.295652-8.904348-72.718841-28.197101-90.527536-47.489855-8.904348-10.388406-19.292754-22.26087-27.455073-37.843479 0.742029 0.742029 0.742029 2.226087 0.742029 2.968116 0 0-4.452174-7.42029-7.420289-19.292753-1.484058-5.936232-2.968116-11.872464-3.710145-17.808696-0.742029-4.452174-0.742029-8.904348 0-12.614493-0.742029-7.42029 0-15.582609 1.484058-23.744927 4.452174-20.776812 12.614493-43.77971 35.617391-65.298551 48.973913-48.231884 115.014493-50.457971 149.147826-50.457971 50.457971 0.742029 138.017391 22.26087 212.22029 48.973913 20.776812-43.77971 34.133333-89.785507 42.295652-121.692754H304.973913v-33.391304h158.052174v-66.782609H272.324638v-34.133333h190.701449v-66.782609c0-8.904348 2.226087-16.324638 16.324638-16.324637h74.944927v83.107246h207.026087v33.391304H554.295652v66.782609H719.768116S702.701449 494.933333 651.501449 586.202899c115.014493 40.811594 277.518841 104.626087 331.686957 126.144927z m0 0" fill="#06B4FD" p-id="1121">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a class="third-login-a" href="https://www.yuque.com/login?platform=wechat">
+                                <span class="wechat">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; width: 28px;height: 28px;" xml:space="preserve">
+                                        <path style="fill:#4CAF50;" d="M365.397,156.629C341.568,88.448,269.739,42.667,186.667,42.667C83.733,42.667,0,114.432,0,202.667
+                                            c0.866,48.885,25.414,94.306,65.835,121.813l-22.037,44.075c-2.685,5.244-0.611,11.671,4.633,14.356
+                                            c3.26,1.669,7.149,1.549,10.3-0.319l56.448-32.277c15.314,5.409,31.197,9.045,47.339,10.837c5.852,0.674,11.143-3.523,11.818-9.375
+                                            c0.141-1.223,0.069-2.461-0.212-3.659c-2.225-9.209-3.384-18.643-3.456-28.117c0-82.325,81.344-149.333,181.333-149.333l3.136,0.149
+                                            c3.467-0.034,6.724-1.663,8.832-4.416C366.014,163.573,366.548,159.924,365.397,156.629z"/>
+                                        <g>
+                                            <path style="fill:#FAFAFA;" d="M117.333,106.667c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32
+                                                S135.006,106.667,117.333,106.667z"/>
+                                            <path style="fill:#FAFAFA;" d="M245.333,106.667c-17.673,0-32,14.327-32,32s14.327,32,32,32s32-14.327,32-32
+                                                S263.006,106.667,245.333,106.667z"/>
+                                        </g>
+                                        <path style="fill:#4CAF50;" d="M512,320c0-70.592-71.765-128-160-128s-160,57.408-160,128s71.765,128,160,128
+                                            c16.552-0.006,33.038-2.099,49.067-6.229l52.885,26.432c5.268,2.637,11.676,0.505,14.313-4.763c1.366-2.728,1.498-5.91,0.364-8.741
+                                            l-14.485-36.267C488.763,397.446,510.505,360.455,512,320z"/>
+                                        <g>
+                                            <path style="fill:#FAFAFA;" d="M298.667,256c-11.782,0-21.333,9.551-21.333,21.333c0,11.782,9.551,21.333,21.333,21.333
+                                                c11.782,0,21.333-9.551,21.333-21.333C320,265.551,310.449,256,298.667,256z"/>
+                                            <path style="fill:#FAFAFA;" d="M405.333,256C393.551,256,384,265.551,384,277.333c0,11.782,9.551,21.333,21.333,21.333
+                                                s21.333-9.551,21.333-21.333C426.667,265.551,417.115,256,405.333,256z"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a class="third-login-a" href="https://account.teambition.com/login?app_id=5d5fb6a6a55c09000171d757&appName=%E8%AF%AD%E9%9B%80&enforceLogin=1&next_url=https%3A%2F%2Faccount.teambition.com%2Foauth%2Fauthorize%3Fscope%3Dapp_user%252Cphone%252Cemail%26client_id%3D5d5fb6a6a55c09000171d757%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fwww.yuque.com%252Flogin%252Foauth%252Fteambition%252Fcallback%26state%3D716bcb87-0da1-4d73-aa48-0aad8a8f2ceb">
+                                <span class="teambition">
+                                
+                                </span>
+                            </a>
+                        </div>
+                        <div class="login-foot">
+                            <a href="/password_rest">找回密码</a>
+                            <span class="login-foot-span"></span>
+                            <a href="/login">邮箱登录</a>
+                            <span class="login-foot-span"></span>
+                            <a href="/register">快速注册</a>
+                            <span class="login-foot-span"></span>
+                            <a href="/yuque/help/sms-issue">遇到问题</a>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </div>
+</body>
+</html>
