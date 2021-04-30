@@ -1,0 +1,158 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.header-container{
+    margin: 0 auto;
+    width: 1200px;
+    border-bottom:2px solid #6f6f68;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.redblock{
+    width: 115px;
+    height: 100%;
+    position: relative;
+    background-color: rgba(122, 23, 23, 0.808);
+    color: aliceblue;
+}
+.baidu{
+    position: absolute;
+    bottom: 0px;
+}
+.time{
+    color: red;
+    margin-top:40px;
+}
+.maincontainer{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+.firstpart-container{
+    height: auto;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.top-content{
+    position: relative;
+    height: 420px;
+    margin-bottom: 15px;
+}
+.img{
+    height: 410px;
+    width: 800px;
+    position: absolute;
+}
+.sidebar{
+    border-top: 4px solid rgba(122, 23, 23, 0.808);
+    margin-left: 45px;
+    width: 340px;
+    height: 408px;
+    position: absolute;
+    right: 0;
+}
+.bottom-content{
+    position: relative;
+}
+.bottom-content > div{
+    width: 230px;
+    height: 130px;
+    display: inline-block;
+} 
+.bottom-content>header{
+    font-weight: 400;
+    font-family:sans-serif;
+
+}
+.middle{
+    margin-left: 50px;
+    font-family:华文仿宋 ;
+    height: auto;
+}
+.right{
+    margin-left: 50px ;
+    font-family:华文仿宋 ;
+    height: auto;
+}
+.left{
+    font-family:华文仿宋 ;
+    height: auto;
+}
+.bottomleft{
+    width: 600px;
+    height: auto;
+    display: inline-block;
+}
+.secondpart-container{
+    margin-top: 50px;
+    width: 1300px;
+    height: auto;
+    display: flex;
+}
+.bottomright{
+    width: 600px;
+    height: auto;
+    margin-right: 30px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.content{
+    display: flex;
+}
+.title{
+    width: 600px;
+    height: auto;
+    border-bottom: 3px solid rgba(4, 4, 70, 0.685);
+}
+.photos{
+    width: 600px;
+    margin-top: 30px;
+}
+.list-style > li:before{
+    content: '▲';
+    color: rgb(52, 52, 141);margin-right: 10px;
+}
+.list-style{
+    list-style: none;
+    margin-top: 20px;
+    height: 200px;
+}
+.list-style > li{
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #6f6f68;
+}
+p{
+    color: #6f6f68;
+}
+.endred{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 360px;
+    background-color: rgb(231, 83, 83);
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.font{
+    color: #fff;
+    font-style: italic;
+    font-size: 24px;
+    
+}
+.finalpart{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    height: 220px;
+    width: 240px;
+}
